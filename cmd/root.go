@@ -5,9 +5,10 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/karuppiah7890/go-jsonschema-generator"
+	"github.com/lengrongfu/helm-schema-gen/jsonschema"
 	"github.com/spf13/cobra"
-	"gopkg.in/yaml.v2"
+	orderedmap "github.com/wk8/go-ordered-map/v2"
+	"gopkg.in/yaml.v3"
 )
 
 // rootCmd represents the base command when called without any subcommands
@@ -30,16 +31,15 @@ Examples:
 		}
 
 		valuesFilePath := args[0]
-		values := make(map[string]interface{})
+		values := orderedmap.New[string, interface{}]()
 		valuesFileData, err := ioutil.ReadFile(valuesFilePath)
 		if err != nil {
 			return fmt.Errorf("error when reading file '%s': %v", valuesFilePath, err)
 		}
 		err = yaml.Unmarshal(valuesFileData, &values)
 		s := &jsonschema.Document{}
-		s.ReadDeep(&values)
+		s.ReadDeep(values)
 		fmt.Println(s)
-
 		return nil
 	},
 }
