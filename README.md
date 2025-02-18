@@ -8,7 +8,7 @@ So that you don't have to write values.schema.json by hand from scratch for your
 generate [JSON Schema for values yaml](https://helm.sh/docs/topics/charts/#schema-files)
 
 
-#"重要"提示提示框，在"重要："后填上你想要的内容，例如"这是一个示例。"
+
 <div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #31708f; background-color: #d9edf7; border-color: #bce8f1;">
 &#x1F50A<b> Important Notice </b>
 </div>
