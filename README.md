@@ -7,7 +7,13 @@ So that you don't have to write values.schema.json by hand from scratch for your
 [Helm](https://helm.sh) plugin to
 generate [JSON Schema for values yaml](https://helm.sh/docs/topics/charts/#schema-files)
 
-> Because the upstream project has been archived, subsequent updates will be submitted to the current repository.
+
+#"重要"提示提示框，在"重要："后填上你想要的内容，例如"这是一个示例。"
+<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #31708f; background-color: #d9edf7; border-color: #bce8f1;">
+&#x1F50A<b> Important Notice </b>
+</div>
+
+> Because the [upstream project](https://github.com/karuppiah7890/helm-schema-gen) has been archived, subsequent updates will be submitted to the current repository.
 > Important updates are recorded below:
 > 1. Added json sorting output to keep the format order consistent with that in the yaml file.
 
@@ -34,9 +40,9 @@ binary version
 
 ```
 $ helm plugin install https://github.com/lengrongfu/helm-schema-gen.git
-karuppiah7890/helm-schema-gen info checking GitHub for tag '0.0.4'
-karuppiah7890/helm-schema-gen info found version: 0.0.4 for 0.0.4/Darwin/x86_64
-karuppiah7890/helm-schema-gen info installed ./bin/helm-schema-gen
+lengrongfu/helm-schema-gen info checking GitHub for tag '0.0.4'
+lengrongfu/helm-schema-gen info found version: 0.0.4 for 0.0.4/Darwin/x86_64
+lengrongfu/helm-schema-gen info installed ./bin/helm-schema-gen
 Installed plugin: schema-gen
 ```
 

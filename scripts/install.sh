@@ -6,7 +6,7 @@ set -e
 usage() {
   this=$1
   cat <<EOF
-$this: download go binaries for karuppiah7890/helm-schema-gen
+$this: download go binaries for lengrongfu/helm-schema-gen
 
 Usage: $this [-b] bindir [-d] [tag]
   -b sets bindir or installation directory, Defaults to ./bin
@@ -350,7 +350,7 @@ End of functions from https://github.com/client9/shlib
 EOF
 
 PROJECT_NAME="helm-schema-gen"
-OWNER=karuppiah7890
+OWNER=lengrongfu
 REPO="helm-schema-gen"
 BINARY=helm-schema-gen
 FORMAT=tar.gz
